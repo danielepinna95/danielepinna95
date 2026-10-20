@@ -13,9 +13,9 @@
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**grassland-biomass-gpr**](https://github.com/danielepinna95/grassland-biomass-gpr) | Gaussian Process Regression for grassland above-ground biomass from Sentinel-2 and PlanetScope, with calibrated uncertainty and pixel-wise maps. Field-level R² 0.97, MAE 60–120 kg DM/ha. 950 field samples included. *Precision Agriculture* 2025 | R · GauPro · caret · terra · Python |
+| [**grassland-biomass-gpr**](https://github.com/danielepinna95/grassland-biomass-gpr) | Gaussian Process Regression for grassland above-ground biomass from Sentinel-2 and PlanetScope, with calibrated uncertainty and pixel-wise maps. Field-level R² 0.97, MAE 60–120 kg DM/ha. *Precision Agriculture* 2025 | R · GauPro · caret · terra · Python |
 | [**alpine-grassland-phenology**](https://github.com/danielepinna95/alpine-grassland-phenology) | 23 years of MODIS NDVI for 889 alpine pastures: harmonic regression for start, peak and end of season, plus Kendall's τ and GAMs against terrain, climate and soil drivers (R² 0.70–0.91). *Computers and Electronics in Agriculture* 2025 | Google Earth Engine · Python · R / mgcv |
-| [**lingra-municipal**](https://github.com/danielepinna95/lingra-municipal) | An adaptation of the WUR **LINGRA** grass model to long daily runs for any spatial unit (municipality, district, grid cell), with ERA5-Land weather and Saxton & Rawls soil parameters | R · Google Earth Engine |
+| **lingra-municipal** *(private, paper in preparation)* | An adaptation of the WUR **LINGRA** grass model to long daily runs for any spatial unit (municipality, district, grid cell), with ERA5-Land weather and Saxton & Rawls soil parameters | R · Google Earth Engine |
 | **Quaderno** *(private, in development)* | A Telegram bot that reads farm operations from the farm's own group chat, validates them and fills in Italy's digital field register, with voice notes, a nitrates and CAP compliance check, and an onboarding UI | Python · LLMs · Streamlit · pytest |
 
 ## 📄 Publications
