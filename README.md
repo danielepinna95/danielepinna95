@@ -20,9 +20,9 @@
 
 ## 📄 Publications
 
-- **Pinna D.**, Basso E., Pornaro C., Pullanagari R., Macolino S., Pezzuolo A., Marinello F. (2025). Optimising grassland above-ground biomass estimation for managed grasslands: a Gaussian process regression approach for Sentinel-2 and PlanetScope in Northern Italy. *Precision Agriculture*, 26, 98. [doi:10.1007/s11119-025-10298-2](https://doi.org/10.1007/s11119-025-10298-2)
-- **Pinna D.**, Sozzi M., Pornaro C., Macolino S., Pezzuolo A., Marinello F. (2025). Modelling vegetation phenology in alpine grasslands of North-East Italy integrating microclimatic and meteorological drivers: a 23-year time-series analysis. *Computers and Electronics in Agriculture*, 232, 110154. [doi:10.1016/j.compag.2025.110154](https://doi.org/10.1016/j.compag.2025.110154)
-- **Pinna D.**, Pezzuolo A., Cogato A., Pornaro C., Macolino S., Marinello F. (2024). Applications of satellite platforms and machine learning for mapping and monitoring grasslands and pastures: a systematic and comprehensive review. *Smart Agricultural Technology*, 9, 100571.
+- **Pinna D.**, Basso E., Pornaro C., Pullanagari R., Macolino S., Pezzuolo A., Marinello F. (2025). Optimising grassland above-ground biomass estimation for managed grasslands: a Gaussian process regression approach for Sentinel-2 and PlanetScope in Northern Italy. *Precision Agriculture*, 26, 98.(https://doi.org/10.1007/s11119-025-10298-2)
+- **Pinna D.**, Sozzi M., Pornaro C., Macolino S., Pezzuolo A., Marinello F. (2025). Modelling vegetation phenology in alpine grasslands of North-East Italy integrating microclimatic and meteorological drivers: a 23-year time-series analysis. *Computers and Electronics in Agriculture*, 232, 110154.(https://doi.org/10.1016/j.compag.2025.110154)
+- **Pinna D.**, Pezzuolo A., Cogato A., Pornaro C., Macolino S., Marinello F. (2024). Applications of satellite platforms and machine learning for mapping and monitoring grasslands and pastures: a systematic and comprehensive review. *Smart Agricultural Technology*, 9, 100571. (https://doi.org/10.1016/j.atech.2024.100571)
 
 <details>
 <summary>Conference papers</summary>
