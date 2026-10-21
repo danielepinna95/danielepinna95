@@ -1,4 +1,4 @@
-# Hi, I'm Daniele Pinna 👋
+# Hi, I'm Daniele Pinna
 
 **Data scientist in agriculture and environment.** I turn satellite imagery, field measurements and climate data into models that farmers and agronomists can use.
 
