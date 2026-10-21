@@ -22,7 +22,7 @@
 | Project | What it does | Stack |
 |---|---|---|
 | **Time-Series-Phenology-S2** | Within-field variability from Sentinel-2 NDVI time series. For every field and crop cycle it maps the cumulative NDVI from start to peak of season, pixel by pixel. Smoothing and Gu phenometrics are ported from the EO4PM R code and validated against it (identical results on every test field). Includes Cloud Score+ filtering, prominence-based cycle segmentation and a desktop runner | Google Earth Engine · Python · pytest · R (validation) |
-| **biodiv-extraction** | An automatic inventory of farmland landscape elements (hedgerows, single trees, groves, ponds, ditches and the surrounding habitat mosaic) from drone LiDAR rasters and PlanetScope. Outputs BIOBIO, SALCA-BD and Sandy biodiversity indicators, with a human review loop and accuracy reporting. Ships as a standalone Windows desktop app | Python · rasterio / geopandas · Tkinter · PyInstaller |
+| **Biodiversity-Feature-Extraction** | An automatic inventory of farmland landscape elements (hedgerows, single trees, groves, ponds, ditches and the surrounding habitat mosaic) from drone LiDAR rasters and PlanetScope. Outputs BIOBIO, SALCA-BD and Sandy biodiversity indicators, with a human review loop and accuracy reporting. Ships as a standalone Windows desktop app | Python · rasterio / geopandas · Tkinter · PyInstaller |
 | **Quaderno** (ARVA_BOT) | A Telegram bot that reads farm operations from the farm's own group chat, validates them and fills in Italy's digital field register, with voice notes, a nitrates and CAP compliance check, and an onboarding UI | Python · LLMs · Streamlit · pytest |
 
 ## 📄 Publications
