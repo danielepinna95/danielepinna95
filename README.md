@@ -7,21 +7,28 @@
 - 🛰️ Visiting researcher at the **Australian Plant Phenomics Network**, The Plant Accelerator, University of Adelaide (2025): spectral data and ML for vegetation traits
 - 📚 Agricultural Sciences, MSc 110/110 cum laude, University of Padova
 
-**Main topics:** grassland and pasture monitoring · above-ground biomass · vegetation phenology · crop and grass growth models · uncertainty-aware ML
+**Main topics:** grassland and pasture monitoring · above-ground biomass · crop and grassland phenology · within-field variability · landscape elements and farmland biodiversity · crop and grass growth models · uncertainty-aware ML
 
-## 🔬 Featured projects
+## 🔬 Research code
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**grassland-biomass-gpr**](https://github.com/danielepinna95/grassland-biomass-gpr) | Gaussian Process Regression for grassland above-ground biomass from Sentinel-2 and PlanetScope, with calibrated uncertainty and pixel-wise maps. Field-level R² 0.97, MAE 60–120 kg DM/ha. *Precision Agriculture* 2025 | R · GauPro · caret · terra · Python |
-| [**alpine-grassland-phenology**](https://github.com/danielepinna95/alpine-grassland-phenology) | 23 years of MODIS NDVI for 889 alpine pastures: harmonic regression for start, peak and end of season, plus Kendall's τ and GAMs against terrain, climate and soil drivers (R² 0.70–0.91). *Computers and Electronics in Agriculture* 2025 | Google Earth Engine · Python · R / mgcv |
-| **lingra-municipal** *(private, paper in preparation)* | An adaptation of the WUR **LINGRA** grass model to long daily runs for any spatial unit (municipality, district, grid cell), with ERA5-Land weather and Saxton & Rawls soil parameters | R · Google Earth Engine |
-| **Quaderno** *(private, in development)* | A Telegram bot that reads farm operations from the farm's own group chat, validates them and fills in Italy's digital field register, with voice notes, a nitrates and CAP compliance check, and an onboarding UI | Python · LLMs · Streamlit · pytest |
+| [**Grassland-Biomass-GPR**](https://github.com/danielepinna95/Grassland-Biomass-GPR) | Gaussian Process Regression for grassland above-ground biomass from Sentinel-2 and PlanetScope, with calibrated uncertainty and pixel-wise maps. Field-level R² 0.97, MAE 60–120 kg DM/ha. *Precision Agriculture* 2025 | R · GauPro · caret · terra · Python |
+| [**Alpine-Grassland-Phenology-MODIS**](https://github.com/danielepinna95/Alpine-Grassland-Phenology-MODIS) | 23 years of MODIS NDVI for 889 alpine pastures: harmonic regression for start, peak and end of season, plus Kendall's τ and GAMs against terrain, climate and soil drivers (R² 0.70–0.91). *Computers and Electronics in Agriculture* 2025 | Google Earth Engine · Python · R / mgcv |
+| **LINGRA-Regional** *(private, paper in preparation)* | An adaptation of the WUR **LINGRA** grass model to long daily runs for any spatial unit (municipality, district, grid cell), with ERA5-Land weather and Saxton & Rawls soil parameters | R · Google Earth Engine |
+
+## 🛠️ Applied tools *(private repositories)*
+
+| Project | What it does | Stack |
+|---|---|---|
+| **Time-Series-Phenology-S2** | Within-field variability from Sentinel-2 NDVI time series. For every field and crop cycle it maps the cumulative NDVI from start to peak of season, pixel by pixel. Smoothing and Gu phenometrics are ported from the EO4PM R code and validated against it (identical results on every test field). Includes Cloud Score+ filtering, prominence-based cycle segmentation and a desktop runner | Google Earth Engine · Python · pytest · R (validation) |
+| **biodiv-extraction** | An automatic inventory of farmland landscape elements (hedgerows, single trees, groves, ponds, ditches and the surrounding habitat mosaic) from drone LiDAR rasters and PlanetScope. Outputs BIOBIO, SALCA-BD and Sandy biodiversity indicators, with a human review loop and accuracy reporting. Ships as a standalone Windows desktop app | Python · rasterio / geopandas · Tkinter · PyInstaller |
+| **Quaderno** (ARVA_BOT) | A Telegram bot that reads farm operations from the farm's own group chat, validates them and fills in Italy's digital field register, with voice notes, a nitrates and CAP compliance check, and an onboarding UI | Python · LLMs · Streamlit · pytest |
 
 ## 📄 Publications
 
-- **Pinna D.**, Basso E., Pornaro C., Pullanagari R., Macolino S., Pezzuolo A., Marinello F. (2025). Optimising grassland above-ground biomass estimation for managed grasslands: a Gaussian process regression approach for Sentinel-2 and PlanetScope in Northern Italy. *Precision Agriculture*, 26, 98.(https://doi.org/10.1007/s11119-025-10298-2)
-- **Pinna D.**, Sozzi M., Pornaro C., Macolino S., Pezzuolo A., Marinello F. (2025). Modelling vegetation phenology in alpine grasslands of North-East Italy integrating microclimatic and meteorological drivers: a 23-year time-series analysis. *Computers and Electronics in Agriculture*, 232, 110154.(https://doi.org/10.1016/j.compag.2025.110154)
+- **Pinna D.**, Basso E., Pornaro C., Pullanagari R., Macolino S., Pezzuolo A., Marinello F. (2025). Optimising grassland above-ground biomass estimation for managed grasslands: a Gaussian process regression approach for Sentinel-2 and PlanetScope in Northern Italy. *Precision Agriculture*, 26, 98. (https://doi.org/10.1007/s11119-025-10298-2)
+- **Pinna D.**, Sozzi M., Pornaro C., Macolino S., Pezzuolo A., Marinello F. (2025). Modelling vegetation phenology in alpine grasslands of North-East Italy integrating microclimatic and meteorological drivers: a 23-year time-series analysis. *Computers and Electronics in Agriculture*, 232, 110154. (https://doi.org/10.1016/j.compag.2025.110154)
 - **Pinna D.**, Pezzuolo A., Cogato A., Pornaro C., Macolino S., Marinello F. (2024). Applications of satellite platforms and machine learning for mapping and monitoring grasslands and pastures: a systematic and comprehensive review. *Smart Agricultural Technology*, 9, 100571. (https://doi.org/10.1016/j.atech.2024.100571)
 
 <details>
@@ -36,10 +43,11 @@
 ## 🧰 Toolbox
 
 **Languages:** R · Python · JavaScript (Earth Engine)
-**Remote sensing:** Sentinel-1/2, PlanetScope, Landsat, MODIS, PRISMA and EnMAP hyperspectral, UAV multispectral, PROSAIL
+**Remote sensing:** Sentinel-1/2, PlanetScope, Landsat, MODIS, PRISMA and EnMAP hyperspectral, UAV multispectral and LiDAR, PROSAIL
 **ML and statistics:** Gaussian processes, random forest, SVR, GAMs, SHAP, conformal prediction, spatial statistics
 **Geospatial:** Google Earth Engine, QGIS, ArcGIS, terra / sf, rasterio / geopandas
-**Modelling:** LINGRA, harmonic time-series analysis
+**Modelling:** LINGRA, harmonic time-series analysis, phenometrics (EO4PM / Gu)
+**Software:** desktop apps (Tkinter, PyInstaller), Streamlit, Telegram bots, pytest
 
 ## 📫 Contact
 
